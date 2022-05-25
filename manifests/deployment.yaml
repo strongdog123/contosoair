@@ -1,21 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: contosoair
+  creationTimestamp: null
   labels:
     app: contosoair
+  name: contosoair
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: contosoair
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: contosoair
     spec:
       containers:
-        - name: contosoair
-          image: contosoair
-          ports:
-            - containerPort: 3000
+      - image: testregistry.azurecr.io/contosoair
+        name: contosoair
+        ports:
+        - containerPort: 3000
+        resources: {}
+status: {}
