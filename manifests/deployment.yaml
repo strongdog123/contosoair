@@ -18,9 +18,11 @@ spec:
         app: contosoair
     spec:
       containers:
-      - image: testregistry.azurecr.io/contosoair
+      - image: test.azurecr.io/test
         name: contosoair
         ports:
         - containerPort: 3000
         resources: {}
+status: {}
+{}
 status: {}

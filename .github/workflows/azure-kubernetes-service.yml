@@ -5,12 +5,12 @@ name: Build and deploy an app to AKS
             - master
     workflow_dispatch: null
 env:
-    AZURE_CONTAINER_REGISTRY: testregistry
-    CLUSTER_NAME: awesomecluster
-    CONTAINER_NAME: contosoair
+    AZURE_CONTAINER_REGISTRY: test
+    CLUSTER_NAME: testcluster
+    CONTAINER_NAME: test
     DEPLOYMENT_MANIFEST_PATH: ./manifests
-    IMAGE_PULL_SECRET_NAME: testregistrysecret
-    RESOURCE_GROUP: awesomerg
+    IMAGE_PULL_SECRET_NAME: testsecret
+    RESOURCE_GROUP: testrg
 jobs:
     buildImage:
         permissions:
