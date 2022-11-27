@@ -22,4 +22,3 @@ spec:
         name: contosoair
         ports:
         - containerPort: 3000
-        resources: {}
