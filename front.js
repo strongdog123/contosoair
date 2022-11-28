@@ -7,7 +7,8 @@ require('./scss/main.scss');
 $(document).ready(function(){
     var today = $('.datepicker').data('start') || new Date();
     var options = {
-        format: 'yyyy-mm-dd',
+        //format: 'yyyy-mm-dd',
+        format: 'yy-mm-dd',
         startDate: today
     };
 
