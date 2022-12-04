@@ -7,5 +7,5 @@ WORKDIR /usr/src/app
 COPY package.json .
 RUN npm install
 COPY . .
-
+# start node
 CMD ["npm", "start"]
